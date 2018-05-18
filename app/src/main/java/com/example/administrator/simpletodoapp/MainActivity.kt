@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     var lvItems:ListView
     init {
         items = ArrayList<String>()
-        itemsAdapter = ArrayAdapter()
+        itemsAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1)
         lvItems = findViewById<ListView>(R.id.lvItems)
         //lvItems = ListView()
 
